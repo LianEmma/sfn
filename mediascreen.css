@@ -1,0 +1,232 @@
+@media screen and (max-width: 1024px) {
+    .hero{
+        height: 50dvh;
+    }
+    .hero-img{
+        width: 500px;
+        flex-shrink: 0;
+    }
+      .hero-content h1{
+        font-size: 2.5em;
+    }
+
+    .about{
+        height: 50dvh;
+    }
+
+    .services{
+        height: 50dvh;
+    }
+
+    .portofolio{
+        height: 50dvh;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .padd{
+        padding-inline: 2rem;
+        padding-block: 4rem;
+    }
+    .hero{
+        min-height: 50dvh;
+    }
+
+    .hero-content h1{
+        font-size: 2.5em;
+    }
+    .hero-content p{
+        font-size: 0.9em;
+    }
+    .hero-img{
+        width: 400px;
+    }
+
+    /* about */
+    .about{
+        min-height: 50dvh;
+        gap: 50px;
+    }
+    .about-left{
+        width: 40%;
+        /* flex-shrink: 0; */
+    }
+
+    .about-left .img{
+        width: 120px;
+        height: 120px;
+        flex-shrink: 0;
+    }
+
+    .about-right h1{
+        font-size: 2.4em;
+    }
+    .about-right p{
+        font-size: 1em;
+    }
+
+    .about-right-mid{
+        flex-direction: column;
+    }
+    .about-right-mid .about-right-mid-card{
+        width: 100%;
+        height: 100px;
+        padding: 12px;
+    }
+
+    .about-right-mid-card h4{
+        font-size: 0.9em;
+    }
+    .about-right-mid-card p{
+        font-size: 0.9em;
+    }
+
+    .about-right-mid-card .fa-bolt{
+        padding-top: 20px;
+    }
+
+    .services{
+        min-height: 50dvh;
+    }
+
+    .portofolio{
+        min-height: 60dvh;
+    }
+
+    .cta-inner{
+        padding: 16px;
+    }
+
+    .cta-inner p{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .hero{
+        min-height: 100dvh;
+        overflow: hidden;
+    }
+    
+    .about{
+        min-height: 100dvh;
+    }
+
+    .services{
+        min-height: 100dvh;
+    }
+    .portofolio{
+        flex-direction: column;
+        min-height: 100dvh;
+    }
+
+    .portfolio-gallery{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    /* section{
+        outline: 2px dashed red;
+    } */
+
+    nav{
+        padding: 12px;
+        position: relative;
+    }
+    nav .links{
+        width: 200px;
+        position: absolute;
+        top: 50px;
+        right: -220px;
+        justify-content: left;
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        box-shadow: 0px 4px 6px #333;
+        transition: 0.5s ease;
+    }
+
+    nav .links.active{
+        right: 20px;
+    }
+
+    nav #bars{
+        display: block;
+
+    }
+    .hero{
+        flex-direction: column-reverse;
+        min-height: 100dvh;
+    }
+
+    .hero-img{
+        position: absolute;
+        top: 80px;
+        right: 0%;
+        z-index: -1;
+    }
+    .hero-img .img{
+        width: 300px;
+    }
+    .about{
+        min-height: 130dvh;
+        flex-direction: column;
+    }
+
+    .about-right-mid{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .about-right-mid-card{
+        height: 200px !important;
+    }
+
+    .services{
+        min-height: 100vh;
+        margin-bottom: 20px !important;
+    }
+
+    .services-top{
+        position: relative;
+        padding-top: 2rem;
+    }
+
+    .services h2{
+        font-size: 2em;
+        width: 100%;
+        padding-right: 2px;
+    }
+
+    .services-top p{
+        font-size: 0.9em;
+    }
+
+    .service-cards{
+        flex-wrap: wrap;
+    }
+
+    .service-cards .service-card{
+        padding: 16px;
+    }
+
+    .portofolio{
+        min-height: 150dvh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .portfolio-top{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* .tech-top{
+        margin-top: 6rem;
+    } */
+}

@@ -1,0 +1,243 @@
+:root{
+    --bluebackground: rgba(255, 25, 94, 0.938);
+    --box-shadow-lager: 0px 10px 15px rgba(0, 0, 0, 0.05);
+    --box-shadow-small: 0px 4px 6px rgba(0, 0, 0, 0.05);
+    --box-shadow-contact: 0px 4px 6px #27272796;
+    --primary: #38bdf8;
+    --gray-200: #e2e8f0;
+    --gray-600: #475569;
+    --gray-800: #1e293b;
+}
+
+
+.contact-header nav a{
+    color: #171f30;
+}
+
+.contact-nav.cnav{
+    position: fixed;
+    top: 0%;
+    background: #fff;
+    box-shadow: var(--box-shadow-contact);
+}
+
+.contact-nav.cnav .logo a{
+        color: #fd2e85;
+}
+.contact-nav.cnav a{
+        color: #08080a;
+}
+
+.contact-hero{
+    width: 100%;
+    height: 300px;
+    font-weight: 500;
+    position: relative;
+}
+
+.contact-header{
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-header::before{
+    content: '';
+    position: absolute;
+    height: 345px;
+    inset: 0;
+    background: #2b192127;
+    backdrop-filter: blur(3px);
+}
+
+.contact-hero-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 25px;
+    padding: 4em;
+    color: #111010;
+    position: relative;
+    /* background: var(--gray-800); */
+}
+
+.contact-hero-content h1{
+    font-size: 2.75rem;
+}
+
+/* form-container */
+.form-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.form-wrapper{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 20px;
+    padding: 1.5rem;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(60px);
+    margin-top: 0px;
+    box-shadow: var(--box-shadow-contact);
+    z-index: 34;
+}
+
+.ball{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: #fd2c8e;
+    z-index: -1;
+    border-radius: 100%;
+}
+
+.ball2{
+    position: absolute;
+    left: 130px;
+    bottom: -280px;
+    width: 200px;
+    height: 200px;
+    background: #fd2c8e;
+    border-radius: 100%;
+    z-index: -2;
+}
+
+.form-wrapper-top h1{
+    font-size: 1.7em;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 0px;
+}
+
+.form-top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.form-top .first-name{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+form input{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: #1e293b36;
+}
+
+.form-mid{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form textarea{
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    height: 140px;
+    padding: 12px;
+    background: #1e293b36;
+    outline: none;
+}
+
+/* side-section */
+.side-section{
+    width: 380px;
+}
+.side-section .img{
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 25px;
+    box-shadow: var(--box-shadow-contact);
+}
+
+.other-ways{
+    width: 100%;
+    display: flex;
+
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem;
+    margin-top: 30px;
+    border-radius: 25px;
+    backdrop-filter: blur(60px);
+    background: #27272717;
+    box-shadow: 0px 0px 3px #27272796;
+}
+
+.way{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0.8rem;
+    border-radius: 12px;
+    background: #4538f823;
+}
+
+.way .way-icon{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    background: #fd3789;
+    color: #fff;
+    border-radius: 100%;
+}
+
+.way-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media screen and (max-width: 560px) {
+    .form-container{
+        flex-direction: column;
+        padding: 12px;
+    }
+
+    .form-wrapper{
+        width: 100%;
+    }
+
+    .other-ways{
+        width: 100%;
+        padding: 12px;
+    }
+
+    .side-section{
+        width: 100%;
+    }
+
+    .contact-hero{
+        width: 100%;
+        padding: 12px;
+    }
+
+    .contact-hero-content h1{
+        font-size: 2rem;
+    }
+}
