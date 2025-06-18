@@ -173,8 +173,21 @@
 
 .member-1 p{
     padding: 16px;
+    font-weight: 500;
+    font-size: 1.2em;
 }
 
+.mem-name{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mem-name .role{
+  background: #040625b0;
+  color: white;
+}
 /* time */
 .time{
     width: 100%;
