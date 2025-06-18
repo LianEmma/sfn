@@ -181,7 +181,7 @@
     }
 
     .about-right-mid-card{
-        height: 300px !important;
+        height: 100% !important;
     }
 
     .services{
